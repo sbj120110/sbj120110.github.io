@@ -1,211 +1,216 @@
-<!DOCTYPE html>
-<html>
+
+
+
+
+
+
+
+
+
+<!doctype html>
+<html lang="zh-CN">
+
+<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" 
+src="//cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js">
+</script>
+<link href=  "/plugins/code-theme/tomorrow.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" href="/plugins/github-markdown.css">
+
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1">
   
+    
+    
+      <link rel="stylesheet" href="/css/legend.css">
+    
+  
+<meta name="generator" content="Hexo 4.2.1"></head>
 
-  
-  <title>前端小孙的博客</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="能上的时候要上，不能上的时候创造条件也要上">
-<meta property="og:type" content="website">
-<meta property="og:title" content="前端小孙的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="前端小孙的博客">
-<meta property="og:description" content="能上的时候要上，不能上的时候创造条件也要上">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="前端小孙">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="前端小孙的博客" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-<meta name="generator" content="Hexo 5.1.1"></head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">前端小孙的博客</a>
-      </h1>
-      
+<body id="body-home-bg">
+<div id="layout-content">
+  <div id="menu-outer-home">
+  <div id="menu-inner">
+    
+    
+    <div id="site-title">
+      前端小孙的博客
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-      </div>
+    
+
+     
+    <div>
+    
+      
+      <a href="/">首页</a>
+      
+    
+      
+      <a href="/archives">归档</a>
+      
+    
     </div>
   </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-vue的基本知识点" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/08/29/vue%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86%E7%82%B9/" class="article-date">
-  <time datetime="2020-08-29T01:51:36.000Z" itemprop="datePublished">2020-08-29</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/08/29/vue%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86%E7%82%B9/">Vue的一些基本内容</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Vue.js<br>Vue 是一套用于构建用户界面的渐进式 JavaScript 框架。何为渐进式的 JS 框架，就是由浅入深，由简单到复杂的去使用 Vue.js。</p>
-<hr>
-<h3>Vue.js 的优点！！！</h3>
-相较于其他的大型框架，Vue.js 的优势在哪呢？
-
-<p>1、体积小<br>压缩后的 Vue.js 只有 33K</p>
-<p>2、更高的运行效率<br>Vue.js 基于虚拟 Dom，是一种可以预先通过 Javascript 进行各种计算，把最终的 Dom 操作计算出来并优化的技术，由于这个 Dom 操作属于预处理操作，并没有真实的操作 Dom，所以叫做虚拟 Dom。</p>
-<p>3、实现了双向数据绑定<br>双向数据绑定让开发者不用再去操作 Dom 对象，把更多的精力投入到业务逻辑上。</p>
-<p>4、生态丰富、学习成本低<br>市场上拥有大量成熟、稳定的基于 Vue.js 的 ui 框架、常用组件！拿来即用就可以实现快速开发</p>
-<hr>
-<h3>VUE.JS 的安装</h3>
-
-<p>1、可以直接使用 “script” 标签引入，Vue 会被注册为一个全局变量。<br>对于初学者来说，还是使用第一种方法较好</p>
-<p>开发的时候，在官网下载开发版本，会直接下载下来一个 Vue.js 的文件，引入到我们的项目中，用 script 标签引入即可。如果将来学会了 Vue 的单文件组件的应用，可以创建一个.vue 结尾的文件。</p>
-<p>或者使用 CDN 的方式，用 script 标签引入一个 CDN 链接</p>
-<p>2、可以使用命令行工具 CLI，去快速搭建一个脚手架。<br>建议:当我们对 Vue 有了一定的了解之后，再使用第二种方式</p>
-<hr>
-<h3>创建第一个 VUE.JS 的应用</h3>
-Vue.js 的核心是个允许采用简洁的模板语法来声明式地将数据渲染进 Dom 的系统
-
-<p>Vue.js 应用主要分为两个部分:</p>
-<p>一为视图，即为 HTML 代码。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=<span class="string">&quot;app&quot;</span>&gt;</span><br><span class="line">  &#123;&#123; message &#125;&#125; &#123;&#123; name &#125;&#125;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-
-<p>一为脚本，即为 js 代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;通过 new Vue 的方式可以获得一个Vue的应用</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;app即为一个对象，或者称为Vue.js的对象</span><br><span class="line"></span><br><span class="line">var app &#x3D; new Vue(&#123;</span><br><span class="line"></span><br><span class="line">  el: &quot;#app&quot;, &#x2F;&#x2F; el即为element,代表元素</span><br><span class="line"></span><br><span class="line">  data: &#123;</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F; data 用于保存数据  我们在视图中声明了哪些变量，就需要在data里面注册这些变量，并且为这些变量进行初始化的赋值。</span><br><span class="line"></span><br><span class="line">    message: &quot;Hey Girl!&quot;,</span><br><span class="line"></span><br><span class="line">    name: &quot;Vue&quot;,</span><br><span class="line"></span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/08/29/vue%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86%E7%82%B9/" data-id="ckef248rr00001gwccawacq3l" class="article-share-link">Share</a>
+</div> 
+  <div id="content-outer">
+    <div id="content-inner">
       
       
-    </footer>
+  
+
+<video id="bgvideo" autoplay playsinline loop poster=/images/background.png>
+  <source src=http://cdn.calm.com/scenes/scene-Qqkzy9k7Eo.mp4?v=1418162238190 type="video/mp4">
+</video>
+
+
+
+
+  <div id="play-button" >
+  <img id="play-img" src="/images/playback_play.png"></img>
+</div>
+<audio id="bgaudio" loop="loop" preload="none"> 
+  <source src=http://cdn.calm.com/scenes/scene-Qqkzy9k7Eo.m4a?v=1418162240715 type="audio/mpeg">
+</audio>
+
+<script>
+$(document).ready(function(){
+  //播放按钮点击
+  var audio = $("#bgaudio")[0];
+  var img = $("#play-img")[0];
+  $("#play-button").click(function(){ 
+    if (audio.paused || audio.ended) {
+      audio.play();
+      img.src = "/images/playback_pause.png";
+    } else {
+      audio.pause();
+      img.src = "/images/playback_play.png";
+    }
+  });
+});
+</script>
+
+
+
+
+<div id="me-button">
+		<img id="play-img" src="/images/me_n.png">
+		</img>
+</div>
+
+<div id="social-div">
+
+
+    
+    
+    <a class="social-a" href="http://weibo.com/3169700852/" target="_blank">
+        <img src="/images/weibo.png">
+    </a>
+    
+
+    
+    
+    <a class="social-a" href="https://github.com/iHongRen" target="_blank">
+        <img src="/images/github.png">
+    </a>
+    
+
+    
+    
+    <a class="social-a" href="https://twitter.com/ihongren" target="_blank">
+        <img src="/images/twitter.png">
+    </a>
+    
+
+
+</div>
+
+
+<div id="about-me">
+  <div id="about-me-inner">
+    <article class="markdown-body"></article>
   </div>
-  
-</article>
+</div>
 
 
-  
+<!--[if lt IE 9]>
+<script>
+	document.createElement('video');
+</script>
+<![endif]-->
 
 
-</section>
-        
-          <aside id="sidebar">
-  
-    
+<script>
 
-  
-    
+$(document).ready(function(){
+  //判断是否该显示’关于我‘
+  if( "home_about"  == 'home_about') {
+    $("#about-me").hide(0);
 
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">八月 2020</a></li></ul>
+    //加载about(关于)读取文件
+    var s = $('article').html();
+    if (s.length < 2) {
+      var url = window.location.protocol+"//"+window.location.host+"/about/";
+      $.ajax({ 
+          type: "GET", 
+          url: url, 
+          dataType: "html", 
+          success: function (data) { 
+            $('article').html($(data).find('article').html());//解析about的html
+            $("#about-me").css({"visibility": "visible"}).delay(100);
+            $("#about-me").slideToggle('slow');
+          }
+      }); 
+      }
+
+    //个人按钮点击，隐藏和显示关于界面
+    $("#me-button").click(function(){ 
+      $("#social-div").slideToggle();
+      $("#about-me").slideToggle();
+    });
+  }
+});
+</script>
+
+
+
     </div>
   </div>
+</div>
 
 
+
+<div id="bottom-outer">
   
+  <div id="bottom-inner">
+    前端小孙 
+    ©2020 |Powered by  
+    <a href="http://hexo.io" target="_blank">Hexo</a> with theme 
+    <a href="https://github.com/iHongRen/legend" target="_blank">legend</a>
+  </div>
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2020/08/29/vue%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86%E7%82%B9/">Vue的一些基本内容</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2020 前端小孙<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
     
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    
+      <a href="/atom.xml">
+      
+      <img src=/images/rss.png height="18" width="18">
+      
+</div> 
 
 
   
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-
   
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
+    <script src="/js/legend.js"></script>
+  
 
 
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-  </div>
 </body>
 </html>
+
+
+<script>
+$(window).on('load', function(){
+   $('pre').addClass('prettyprint').attr('style', 'overflow:auto;');
+   prettyPrint();
+ });
+</script>
+
