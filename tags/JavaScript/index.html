@@ -6,12 +6,12 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>前端小孙的博客</title>
+  <title>Tag: JavaScript | 前端小孙的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="能上的时候要上，不能上的时候创造条件也要上">
 <meta property="og:type" content="website">
 <meta property="og:title" content="前端小孙的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/tags/JavaScript/index.html">
 <meta property="og:site_name" content="前端小孙的博客">
 <meta property="og:description" content="能上的时候要上，不能上的时候创造条件也要上">
 <meta property="og:locale" content="zh_CN">
@@ -183,114 +183,37 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-Vue基础" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/08/29/Vue%E5%9F%BA%E7%A1%80/">Vue基础</a>
-    </h1>
-  
-
-        
-        <a href="/2020/08/29/Vue%E5%9F%BA%E7%A1%80/" class="archive-article-date">
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2020" class="archive-year">2020</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2020/08/29/Vue%E5%9F%BA%E7%A1%80/" class="archive-article-date">
   <time datetime="2020-08-29T08:52:14.000Z" itemprop="datePublished"
     ><i class="icon-calendar icon"></i>2020-08-29</time
   >
 </a>
 
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="Vue-js"><a href="#Vue-js" class="headerlink" title="Vue.js"></a>Vue.js</h2><h2 id="Vue-指令"><a href="#Vue-指令" class="headerlink" title="Vue 指令"></a>Vue 指令</h2><p>在 vue 中提供了一些对于页面 + 数据的更为方便的输出,这些操作就叫做指令, 以 v-xxx 表示;下面介绍一些常用的 Vue 指令。</p>
-<hr>
-<pre><code>1、v-model 指令用来在 input、select、textarea、checkbox、radio 等表单控件元素上创建双向数据绑定，根据表单上的值，自动更新绑定的元素的值。
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2020/08/29/Vue%E5%9F%BA%E7%A1%80/">Vue基础</a>
+    </h1>
+  
 
-2、v-on   按钮的事件我们可以使用 v-on 监听事件，并对用户的输入进行响应。以下实例在用户点击按钮后对字符串进行反转操作。缩写是&quot;@&quot;。是vue提供的事件绑定机制。
-
-3、v-bind  HTML 属性中的值应使用 v-bind 指令。   我们可以为 v-bind:class 设置一个对象，从而动态的切换 class。缩写是&quot;:&quot;;是vue提供的属性绑定机制。
-
-4、v-html 使用 v-html 指令用于输出 html 代码：
-
-
-5、v-clock  可以解决插值表达式闪烁的问题。
-
-6、v-text  和{{msg}}相似，但是不会有闪烁问题； 会覆盖元素文本中原有的内容，但是插值表达式只会替换自己的占位符，不会把整个元素内容清空。
-
-7、v-show ： 可以使用 v-show 指令来根据条件展示元素;控制display的属性(显示/隐藏)。
-
-8、v-if 指令将根据表达式 seen 的值(true 或 false )来决定是否插入 p 元素，会直接的删除元素信息,直接操作DOM元素。比v-show的性能更高。</code></pre>
-<hr>
-<h2 id="计算属性-computed-、方法-methods-、监听-watch-的区别"><a href="#计算属性-computed-、方法-methods-、监听-watch-的区别" class="headerlink" title="计算属性(computed)、方法(methods)、监听(watch)的区别"></a>计算属性(computed)、方法(methods)、监听(watch)的区别</h2><pre><code>计算属性（computed）和方法（methods）的区别：
-
-1、两者的执行结果是完全相同的。
-
-2、计算属性是基于他们的依赖进行缓存的，只有在相关依赖发生改变时，他们才会重新求值，也就是说，只要他的依赖没有发生变化，那么每次访问的时候计算属性都会立即返回之前的计算结果，不再执行函数。
-
-3、每次触发重新渲染时，调用方法将总会再次执行函数。
-
-4、计算属性将总会返回相同值，而方法则不会。
-计算属性有两个方法get和set   get获取  set设置值</code></pre>
-<hr>
-<pre><code>计算属性和 watch 的区别:
-
-1、计算属性是依赖的值改变会重新执行函数，依赖缓存，计算属性是取返回值作为最新结果，所以里面不能异步的返回结果。不能写异步逻辑。
-
-2、侦听属性是侦听的值改变会重新执行函数，将一个值重新赋值作为最新结果，所以赋值的时候可以进行一些异步操作。</code></pre>
-<hr>
-<pre><code>组件：
-组件（Component）是 Vue.js 最强大的功能之一。
-组件可以扩展 HTML 元素，封装可重用的代码。
-组件系统让我们可以用独立可复用的小组件来构建大型应用，几乎任意类型的应用的界面都可以抽象为一个组件树。
-
- 1、当定义局部组件时,必须进行components注册操作。
-
- 2、自定义组件展示的是html标签的内容,每一个组件只有一个根节点，若想插入多个html标签可以在外部添加一个div标签。
-
- 3、data表示组件中的数据,data必须是一个function。
-
- 4、自定义组件中  template是模板  data是数据  methods是方法。
-
- 5、全局组件,不需要注册可以直接使用。
-  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Vue.component(<span class="string">"sbj"</span>, &#123;<span class="attr">template</span>: <span class="string">'&lt;h5&gt;全局组件&lt;/h5&gt;'</span>&#125;)</span><br></pre></td></tr></table></figure></code></pre>
-<hr>
-<p>组件传参</p>
-<pre><code>一、在vue中父组件通过props属性，向子组件传递参数。（父传子）。父传子使用属性。
-
-二、子组件向父组件传递参数。
-
-    1、自定义一个局部的组件，并进行注册操作。
-
-    2、在HTML中设置一个template标签，通过id指定模板。
-
-    3、通过事件派发向父组件传递参数。
-
-        ①、$emit;事件派发。子组件可以使用 $emit 触发父组件的自定义事件,在父组件中进行监听。
-
-        ②、第一个参数是事件的名字,名称。
-
-        ③、第二个参数是传递的数据（可以为数字，字符串，对象）。
-
-三、非相关组件之间传参。
-
-    定义一个空白的Vue实例，所有的事件派发和监听都在此实例中进行。
-
-    1、事件总线。
-
-    2、VueX</code></pre>
-<hr>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -302,97 +225,36 @@
 		</ul>
 	</div>
 
-      
+          
 
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/08/29/Vue%E5%9F%BA%E7%A1%80/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
-    <article id="post-Vue入门" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/08/29/Vue%E5%85%A5%E9%97%A8/">Vue的一些基本内容</a>
-    </h1>
-  
-
-        
-        <a href="/2020/08/29/Vue%E5%85%A5%E9%97%A8/" class="archive-article-date">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2020/08/29/Vue%E5%85%A5%E9%97%A8/" class="archive-article-date">
   <time datetime="2020-08-29T01:51:36.000Z" itemprop="datePublished"
     ><i class="icon-calendar icon"></i>2020-08-29</time
   >
 </a>
 
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Vue.js<br>Vue 是一套用于构建用户界面的渐进式 JavaScript 框架。何为渐进式的 JS 框架，就是由浅入深，由简单到复杂的去使用 Vue.js。</p>
-<hr>
-<h3>Vue.js 的优点！！！</h3>
-相较于其他的大型框架，Vue.js 的优势在哪呢？
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2020/08/29/Vue%E5%85%A5%E9%97%A8/">Vue的一些基本内容</a>
+    </h1>
+  
 
-<p>1、体积小<br>压缩后的 Vue.js 只有 33K</p>
-<p>2、更高的运行效率<br>Vue.js 基于虚拟 Dom，是一种可以预先通过 Javascript 进行各种计算，把最终的 Dom 操作计算出来并优化的技术，由于这个 Dom 操作属于预处理操作，并没有真实的操作 Dom，所以叫做虚拟 Dom。</p>
-<p>3、实现了双向数据绑定<br>双向数据绑定让开发者不用再去操作 Dom 对象，把更多的精力投入到业务逻辑上。</p>
-<p>4、生态丰富、学习成本低<br>市场上拥有大量成熟、稳定的基于 Vue.js 的 ui 框架、常用组件！拿来即用就可以实现快速开发</p>
-<hr>
-<h3>VUE.JS 的安装</h3>
-
-<p>1、可以直接使用 “script” 标签引入，Vue 会被注册为一个全局变量。<br>对于初学者来说，还是使用第一种方法较好</p>
-<p>开发的时候，在官网下载开发版本，会直接下载下来一个 Vue.js 的文件，引入到我们的项目中，用 script 标签引入即可。如果将来学会了 Vue 的单文件组件的应用，可以创建一个.vue 结尾的文件。</p>
-<p>或者使用 CDN 的方式，用 script 标签引入一个 CDN 链接</p>
-<p>2、可以使用命令行工具 CLI，去快速搭建一个脚手架。<br>建议:当我们对 Vue 有了一定的了解之后，再使用第二种方式</p>
-<hr>
-<h3>创建第一个 VUE.JS 的应用</h3>
-Vue.js 的核心是个允许采用简洁的模板语法来声明式地将数据渲染进 Dom 的系统
-
-<p>Vue.js 应用主要分为两个部分:</p>
-<p>一为视图，即为 HTML 代码。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=<span class="string">"app"</span>&gt;</span><br><span class="line">  &#123;&#123; message &#125;&#125; &#123;&#123; name &#125;&#125;</span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>一为脚本，即为 js 代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;通过 new Vue 的方式可以获得一个Vue的应用</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;app即为一个对象，或者称为Vue.js的对象</span><br><span class="line"></span><br><span class="line">var app &#x3D; new Vue(&#123;</span><br><span class="line"></span><br><span class="line">  el: &quot;#app&quot;, &#x2F;&#x2F; el即为element,代表元素</span><br><span class="line"></span><br><span class="line">  data: &#123;</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F; data 用于保存数据  我们在视图中声明了哪些变量，就需要在data里面注册这些变量，并且为这些变量进行初始化的赋值。</span><br><span class="line"></span><br><span class="line">    message: &quot;Hey Girl!&quot;,</span><br><span class="line"></span><br><span class="line">    name: &quot;Vue&quot;,</span><br><span class="line"></span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -404,41 +266,19 @@ Vue.js 的核心是个允许采用简洁的模板语法来声明式地将数据�
 		</ul>
 	</div>
 
-      
+          
 
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/08/29/Vue%E5%85%A5%E9%97%A8/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
   
+    </div></section>
+  
+
+    
 
 
           </div>
@@ -460,10 +300,10 @@ Vue.js 的核心是个允许采用简洁的模板语法来声明式地将数据�
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
+		isHome: false,
 		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
