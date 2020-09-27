@@ -387,33 +387,10 @@
 
  5、全局组件,不需要注册可以直接使用。
   <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Vue.component(<span class="string">"sbj"</span>, &#123;<span class="attr">template</span>: <span class="string">'&lt;h5&gt;全局组件&lt;/h5&gt;'</span>&#125;)</span><br></pre></td></tr></table></figure></code></pre>
-<hr>
-<p>more<br>组件传参</p>
-<pre><code>一、在vue中父组件通过props属性，向子组件传递参数。（父传子）。父传子使用属性。
-
-二、子组件向父组件传递参数。
-
-    1、自定义一个局部的组件，并进行注册操作。
-
-    2、在HTML中设置一个template标签，通过id指定模板。
-
-    3、通过事件派发向父组件传递参数。
-
-        ①、$emit;事件派发。子组件可以使用 $emit 触发父组件的自定义事件,在父组件中进行监听。
-
-        ②、第一个参数是事件的名字,名称。
-
-        ③、第二个参数是传递的数据（可以为数字，字符串，对象）。
-
-三、非相关组件之间传参。
-
-    定义一个空白的Vue实例，所有的事件派发和监听都在此实例中进行。
-
-    1、事件总线。
-
-    2、VueX</code></pre>
-<hr>
-
+<h2 id=""><a href="#" class="headerlink" title=""></a>
+        
+          <a class="article-more-a" href="/2020/08/29/Vue%E5%9F%BA%E7%A1%80/#more">more >></a>
+        
       
 
       
@@ -497,26 +474,10 @@
 <p>1、体积小<br>压缩后的 Vue.js 只有 33K</p>
 <p>2、更高的运行效率<br>Vue.js 基于虚拟 Dom，是一种可以预先通过 Javascript 进行各种计算，把最终的 Dom 操作计算出来并优化的技术，由于这个 Dom 操作属于预处理操作，并没有真实的操作 Dom，所以叫做虚拟 Dom。</p>
 <p>3、实现了双向数据绑定<br>双向数据绑定让开发者不用再去操作 Dom 对象，把更多的精力投入到业务逻辑上。</p>
-<p>4、生态丰富、学习成本低<br>市场上拥有大量成熟、稳定的基于 Vue.js 的 ui 框架、常用组件！拿来即用就可以实现快速开发</p>
-<hr>
-<p>more</p>
-<h3>VUE.JS 的安装</h3>
-
-<p>1、可以直接使用 “script” 标签引入，Vue 会被注册为一个全局变量。<br>对于初学者来说，还是使用第一种方法较好</p>
-<p>开发的时候，在官网下载开发版本，会直接下载下来一个 Vue.js 的文件，引入到我们的项目中，用 script 标签引入即可。如果将来学会了 Vue 的单文件组件的应用，可以创建一个.vue 结尾的文件。</p>
-<p>或者使用 CDN 的方式，用 script 标签引入一个 CDN 链接</p>
-<p>2、可以使用命令行工具 CLI，去快速搭建一个脚手架。<br>建议:当我们对 Vue 有了一定的了解之后，再使用第二种方式</p>
-<hr>
-<h3>创建第一个 VUE.JS 的应用</h3>
-Vue.js 的核心是个允许采用简洁的模板语法来声明式地将数据渲染进 Dom 的系统
-
-<p>Vue.js 应用主要分为两个部分:</p>
-<p>一为视图，即为 HTML 代码。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=<span class="string">"app"</span>&gt;</span><br><span class="line">  &#123;&#123; message &#125;&#125; &#123;&#123; name &#125;&#125;</span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>一为脚本，即为 js 代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;通过 new Vue 的方式可以获得一个Vue的应用</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;app即为一个对象，或者称为Vue.js的对象</span><br><span class="line"></span><br><span class="line">var app &#x3D; new Vue(&#123;</span><br><span class="line"></span><br><span class="line">  el: &quot;#app&quot;, &#x2F;&#x2F; el即为element,代表元素</span><br><span class="line"></span><br><span class="line">  data: &#123;</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F; data 用于保存数据  我们在视图中声明了哪些变量，就需要在data里面注册这些变量，并且为这些变量进行初始化的赋值。</span><br><span class="line"></span><br><span class="line">    message: &quot;Hey Girl!&quot;,</span><br><span class="line"></span><br><span class="line">    name: &quot;Vue&quot;,</span><br><span class="line"></span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
+<p>4、生态丰富、学习成本低<br>市场上拥有大量成熟、稳定的基于 Vue.js 的 ui 框架、常用组件！拿来即用就可以实现快速开发
+        
+          <a class="article-more-a" href="/2020/08/29/Vue%E5%85%A5%E9%97%A8/#more">more >></a>
+        
       
 
       
