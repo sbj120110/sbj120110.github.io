@@ -386,11 +386,33 @@
  4、自定义组件中  template是模板  data是数据  methods是方法。
 
  5、全局组件,不需要注册可以直接使用。
-  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Vue.component(<span class="string">"sbj"</span>, &#123;<span class="attr">template</span>: <span class="string">'&lt;h5&gt;全局组件&lt;/h5&gt;'</span>&#125;)</span><br></pre></td></tr></table></figure></code></pre>
-<h2 id=""><a href="#" class="headerlink" title=""></a>
-        
-          <a class="article-more-a" href="/2020/08/29/Vue%E5%9F%BA%E7%A1%80/#more">more >></a>
-        
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Vue.component(<span class="string">"sbj"</span>, &#123;<span class="attr">template</span>: <span class="string">'&lt;h5&gt;全局组件&lt;/h5&gt;'</span>&#125;) &lt;!-- more --&gt;</span><br></pre></td></tr></table></figure></code></pre>
+<p>组件传参</p>
+<pre><code>一、在vue中父组件通过props属性，向子组件传递参数。（父传子）。父传子使用属性。
+
+二、子组件向父组件传递参数。
+
+    1、自定义一个局部的组件，并进行注册操作。
+
+    2、在HTML中设置一个template标签，通过id指定模板。
+
+    3、通过事件派发向父组件传递参数。
+
+        ①、$emit;事件派发。子组件可以使用 $emit 触发父组件的自定义事件,在父组件中进行监听。
+
+        ②、第一个参数是事件的名字,名称。
+
+        ③、第二个参数是传递的数据（可以为数字，字符串，对象）。
+
+三、非相关组件之间传参。
+
+    定义一个空白的Vue实例，所有的事件派发和监听都在此实例中进行。
+
+    1、事件总线。
+
+    2、VueX</code></pre>
+<hr>
+
       
 
       
