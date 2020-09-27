@@ -16,7 +16,7 @@
 <meta property="og:description" content="Vue.jsVue 指令在 vue 中提供了一些对于页面 + 数据的更为方便的输出,这些操作就叫做指令, 以 v-xxx 表示;下面介绍一些常用的 Vue 指令。  1、v-model 指令用来在 input、select、textarea、checkbox、radio 等表单控件元素上创建双向数据绑定，根据表单上的值，自动更新绑定的元素的值。  2、v-on   按钮的事件我们可以使用 v-on">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-08-29T08:52:14.000Z">
-<meta property="article:modified_time" content="2020-09-27T00:45:07.910Z">
+<meta property="article:modified_time" content="2020-09-27T00:46:01.097Z">
 <meta property="article:author" content="前端小孙">
 <meta property="article:tag" content="JavaScript">
 <meta name="twitter:card" content="summary">
@@ -224,7 +224,7 @@
 
 7、v-show ： 可以使用 v-show 指令来根据条件展示元素;控制display的属性(显示/隐藏)。
 
-8、v-if 指令将根据表达式 seen 的值(true 或 false )来决定是否插入 p 元素，会直接的删除元素信息,直接操作DOM元素。比v-show的性能更高。</code></pre>
+8、v-if 指令将根据表达式 seen 的值(true 或 false )来决定是否插入 p 元素，会直接的删除元素信息,直接操作DOM元素。比v-show的性能更高。&lt;!-- more --&gt;</code></pre>
 <hr>
 <h2 id="计算属性-computed-、方法-methods-、监听-watch-的区别"><a href="#计算属性-computed-、方法-methods-、监听-watch-的区别" class="headerlink" title="计算属性(computed)、方法(methods)、监听(watch)的区别"></a>计算属性(computed)、方法(methods)、监听(watch)的区别</h2><pre><code>计算属性（computed）和方法（methods）的区别：
 
@@ -257,7 +257,7 @@
  4、自定义组件中  template是模板  data是数据  methods是方法。
 
  5、全局组件,不需要注册可以直接使用。
-  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Vue.component(<span class="string">"sbj"</span>, &#123;<span class="attr">template</span>: <span class="string">'&lt;h5&gt;全局组件&lt;/h5&gt;'</span>&#125;) &lt;!-- more --&gt;</span><br></pre></td></tr></table></figure></code></pre>
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Vue.component(<span class="string">"sbj"</span>, &#123;<span class="attr">template</span>: <span class="string">'&lt;h5&gt;全局组件&lt;/h5&gt;'</span>&#125;)</span><br></pre></td></tr></table></figure></code></pre>
 <p>组件传参</p>
 <pre><code>一、在vue中父组件通过props属性，向子组件传递参数。（父传子）。父传子使用属性。
 
